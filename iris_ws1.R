@@ -3,10 +3,10 @@ library(caret)
 library(randomForest)
 
 #You might need to set working directory
-#setwd("/Users/jhg/Box Sync/Lectures/Applied ML (4DV117)/examples-R")
+#setwd("/Users/...[path].../ml-sk")
 
 #Read the dataset
-dataset <- read.csv("iris.csv")
+dataset <- read.csv("data/iris.csv")
 
 #Split into 20% validation and 80% training
 val_index <- createDataPartition(dataset$species, p=0.80, list=FALSE)
