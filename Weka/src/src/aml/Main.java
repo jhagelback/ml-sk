@@ -17,8 +17,9 @@ public class Main
         /**
          * Uncomment the task you want to run.
          */
-        Regression.run();
+        //DiabetesDataset.run();
+        //Regression.run();
         //TextClassification.run();
-        //IrisDataset.run();
+        IrisDataset.run();
     }
 }

@@ -4,17 +4,16 @@ package aml;
 import java.text.DecimalFormat;
 import weka.core.*;
 import weka.core.converters.ConverterUtils;
-import weka.classifiers.bayes.*;
+import weka.classifiers.functions.*;
 import weka.classifiers.trees.*;
-import weka.classifiers.lazy.IBk;
 import weka.classifiers.*;
 
 /**
- * Classifiers for the Iris dataset.
+ * Classifiers for the Diabetes dataset.
  * 
  * @author Johan Hagelbäck (johan.hagelback@lnu.se)
  */
-public class IrisDataset 
+public class DiabetesDataset 
 {
     /** Path to dataset */
     private String filename;
@@ -28,31 +27,15 @@ public class IrisDataset
      */
     public static void run()
     {
-        IrisDataset t = new IrisDataset("data/iris.arff");
+        DiabetesDataset t = new DiabetesDataset("data/diabetes.arff");
         
-        System.out.println("\n---- Naive Bayes ----");
-        
-        System.out.println("Training data:");
-        t.evaluateAll(new NaiveBayes());
-        
-        System.out.println("10-fold CV:");
-        t.evaluateCV(new NaiveBayes());
-        
-        System.out.println("\n---- IBk ----");
+        System.out.println("\n---- Neural Network ----");
         
         System.out.println("Training data:");
-        t.evaluateAll(new IBk(3));
+        t.evaluateAll(new MultilayerPerceptron());
         
         System.out.println("10-fold CV:");
-        t.evaluateCV(new IBk(3));
-        
-        System.out.println("\n---- Decision Trees ----");
-        
-        System.out.println("Training data:");
-        t.evaluateAll(new J48());
-        
-        System.out.println("10-fold CV:");
-        t.evaluateCV(new J48());
+        t.evaluateCV(new MultilayerPerceptron());
         
         System.out.println("\n---- Random Forest ----");
         
@@ -68,7 +51,7 @@ public class IrisDataset
      * 
      * @param filename Path to dataset file
      */
-    public IrisDataset(String filename)
+    public DiabetesDataset(String filename)
     {
         this.filename = filename;
         readData();
