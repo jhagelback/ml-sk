@@ -27,7 +27,7 @@ public class TextClassification
      */
     public static void run()
     {
-        TextClassification t = new TextClassification("data/wikipedia_70.arff");
+        TextClassification t = new TextClassification("data/wikipedia_300.arff");
         
         System.out.println("Accuracy (whole dataset):");
         t.evaluateAll();
@@ -64,11 +64,6 @@ public class TextClassification
             stw.setInputFormat(raw);
             
             data = Filter.useFilter(raw, stw);
-            /*for (int a = 0; a < data.numAttributes(); a++)
-            {
-                Attribute attr = data.attribute(a);
-                System.out.println(attr.name() + ":" + data.instance(0).value(a));
-            }*/
             
             //If StringToWordVector is used, Weka puts the
             //class attribute first (in contrast to the default
