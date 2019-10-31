@@ -12,7 +12,7 @@ A list of Jupyter kernels can be found [here](https://github.com/jupyter/jupyter
 
 **Keras** contains examples using Keras (checked for version 2.2.5) with TensorFlow backend (checked for version 1.14.0).
 
-**R** contains a few examples using R. I am not a huge R fan, but have written some examples for students that prefer R.
+**R** contains a few examples using R (checked for version 3.4.2). I am not a huge R fan, but have written some examples for students that prefer R.
 
 **Weka** contains some examples using the Weka API (checked for version 3.8.3). The main benefit of Weka is its GUI, but learning how to use the API can sometimes be useful.
 
