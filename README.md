@@ -20,4 +20,4 @@ A list of Jupyter kernels can be found [here](https://github.com/jupyter/jupyter
 
 **data** contains the datasets used in the code examples.
 
-**images** Example images used for the pre-trained image recognition example in the Keras folder.
+**images** contains example images used for the pre-trained image recognition example in the Keras folder.
