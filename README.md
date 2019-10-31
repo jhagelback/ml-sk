@@ -3,7 +3,6 @@ This is a collection of machine learning code examples in different languages an
 
 ## Jupyter kernels
 For machine learning I prefer to code in Jupyter Notebooks. There are additional Jupyter kernels available for other languages than Python, which is great if you wanna try out some stuff in Weka or R. I use the following kernels:
-- SoS that supports multiple kernels (available [here](https://github.com/vatlab/SOS))
 - IJava for Java (available [here](https://github.com/SpencerPark/IJava))
 - IRKernel for R (available [here](https://irkernel.github.io/))
 
