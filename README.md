@@ -21,3 +21,16 @@ A list of Jupyter kernels can be found [here](https://github.com/jupyter/jupyter
 **data** contains the datasets used in the code examples.
 
 **images** contains example images used for the pre-trained image recognition example in the Keras folder.
+
+## Run using Docker
+1. Clone the GitHub repository to your computer
+2. Run the Jupyter TensorFlow notebook and attach the notebooks directory by running the following command in a terminal:<br><code>docker run -p 8888:8888 -v ~/[change to your local path here]/ml-sk:/home/jovyan jupyter/tensorflow-notebook</code>
+3. Copy the URL you see in the terminal (<em>http://127.0.0.1:8888/?token=...</em>) and paste it in a web browser
+4. Now you are ready to start hacking!
+
+## Other Docker files
+R:<br>
+<code>docker run -p 8888:8888 -v ~/[change to your local path here]/ml-sk:/home/jovyan jupyter/R-notebook</code><br>
+
+Java:<br>
+<code>docker run -p 8888:8888 -v ~/[change to your local path here]/ml-sk:/home/jovyan jbindinga/java-notebook</code>
