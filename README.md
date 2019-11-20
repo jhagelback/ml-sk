@@ -29,8 +29,8 @@ A list of Jupyter kernels can be found [here](https://github.com/jupyter/jupyter
 4. Now you are ready to start hacking!
 
 ## Other Docker files
-R:<br>
+<b>R</b>:<br>
 <code>docker run --rm -p 8888:8888 -v ~/[change to your local path here]/ml-sk:/home/jovyan jupyter/R-notebook</code><br>
 
-Java:<br>
+<b>Java</b>:<br>
 <code>docker run --rm -p 8888:8888 -v ~/[change to your local path here]/ml-sk:/home/jovyan jbindinga/java-notebook</code>
