@@ -1,2 +1,2 @@
 #/bin/sh
-docker image build -t jupyter-full .
+docker image build -t jhagelback/jupyter-ext .

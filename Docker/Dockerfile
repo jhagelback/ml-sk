@@ -3,16 +3,13 @@
 ARG BASE_CONTAINER=jupyter/scipy-notebook
 FROM $BASE_CONTAINER
 
-LABEL maintainer="Jupyter Project <jupyter@googlegroups.com>"
+LABEL maintainer="Johan Hagelbäck <johan.hagelback@gmail.com>"
 
-# Install Tensorflow
+# Install packages
 RUN pip install --quiet \
-    'tensorflow==2.0.0' && \
-    fix-permissions $CONDA_DIR && \
-    fix-permissions /home/$NB_USER
-
-# Install XGBoost
-RUN pip install --quiet \
-    'xgboost' && \
+    'tensorflow' \
+    'xgboost'  \
+    'opencv-python'  \
+    && \
     fix-permissions $CONDA_DIR && \
     fix-permissions /home/$NB_USER
