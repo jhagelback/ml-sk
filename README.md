@@ -29,8 +29,20 @@ A list of Jupyter kernels can be found [here](https://github.com/jupyter/jupyter
 4. Now you are ready to start hacking!
 
 ## Other Docker files
-R:<br>
+<b>R</b>:<br>
 <code>docker run --rm -p 8888:8888 -v ~/[change to your local path here]/ml-sk:/home/jovyan jupyter/R-notebook</code><br>
 
-Java:<br>
+Jupyter Notebook with R support.
+
+<b>Java</b>:<br>
 <code>docker run --rm -p 8888:8888 -v ~/[change to your local path here]/ml-sk:/home/jovyan jbindinga/java-notebook</code>
+
+Jupyter Notebook with Java support.
+
+<b>Jupyter extended</b>:<br>
+<code>docker run --rm -p 8888:8888 -v ~/[change to your local path here]/ml-sk:/home/jovyan jhagelback/jupyter-ext</code>
+
+Extended Jupyter Tensorflow notebook (available at <a href="https://hub.docker.com/r/jhagelback/jupyter-ext">Docker Hub</a>)  with some additional packages:
+* XGBoost
+* OpenCV
+
