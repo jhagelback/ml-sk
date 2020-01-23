@@ -1,5 +1,5 @@
 5-celebrity-faces-dataset/
 celebrity-faces-extended/
-.npz
+*.npz
 .ipynb_checkpoint*
 
