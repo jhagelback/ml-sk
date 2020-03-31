@@ -43,6 +43,5 @@ Jupyter Notebook with Java support.
 <code>docker run --rm -p 8888:8888 -v [put your local path here]/ml-sk:/home/jovyan jhagelback/jupyter-ext</code>
 
 Extended Jupyter Tensorflow notebook (available at <a href="https://hub.docker.com/r/jhagelback/jupyter-ext">Docker Hub</a>)  with some additional packages:
-* XGBoost
-* OpenCV
+* XGBoost, OpenCV, mtcnn, gensim, pyod, import-ipynb
 
