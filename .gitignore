@@ -3,4 +3,7 @@ celebrity-faces-extended/
 *.npz
 .ipynb_checkpoint*
 .DS_Store
+lego-minifigures/
+*.json
+*.h5
 
